@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "cd686180-ecf7-41a8-93ca-0e385ef78768",
+		"name": "Prueba2019P1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/superbowlad/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "empresa",
+							"value": "pepsi",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.pepsi.com",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "pepsiok",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2019",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "50000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/superbowlad/new",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"superbowlad",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/superbowlad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3001/api/superbowlad",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"superbowlad"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
